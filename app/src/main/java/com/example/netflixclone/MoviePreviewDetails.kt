@@ -68,7 +68,7 @@ fun MovieDetails() {
 
 @Preview
 @Composable
-fun MovieInfromation(){
+fun MovieInfromation() {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -76,20 +76,39 @@ fun MovieInfromation(){
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
         Column() {
-           Image(painterResource(id = R.drawable.add), contentDescription = "",
-               modifier = Modifier.padding(start = 12.dp))
-            Text(text = "My list", color = Color.LightGray, fontWeight = FontWeight.SemiBold, fontSize = 16.sp)
+            Image(
+                painterResource(id = R.drawable.add), contentDescription = "",
+                modifier = Modifier.padding(start = 12.dp)
+            )
+            Text(
+                text = "My list",
+                color = Color.LightGray,
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 16.sp
+            )
 
         }
-        Button(onClick = {},
-            colors= ButtonDefaults.buttonColors(Color.White),
-            shape = RoundedCornerShape(5.dp),) {
-            Text(text = "Play", color = Color.Black, fontWeight = FontWeight.SemiBold, fontSize = 16.sp)
-            
+        Button(
+            onClick = {},
+            colors = ButtonDefaults.buttonColors(Color.White),
+            shape = RoundedCornerShape(5.dp),
+        ) {
+            Text(
+                text = "Play",
+                color = Color.Black,
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 16.sp
+            )
+
         }
         Column() {
             Image(painterResource(id = R.drawable.info_24), contentDescription = "")
-            Text(text = "Info", color = Color.LightGray, fontWeight = FontWeight.SemiBold, fontSize = 16.sp)
+            Text(
+                text = "Info",
+                color = Color.LightGray,
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 16.sp
+            )
 
         }
     }
